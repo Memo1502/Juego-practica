@@ -7,6 +7,7 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField] private string nextLevel;
     public GameObject pnl_Settings;
+    public GameObject pnl_Skins;
 
     public void LoadScene()
     {
@@ -16,5 +17,10 @@ public class MenuController : MonoBehaviour
     public void ActiveSettingsPanel(bool active)
     {
         pnl_Settings.SetActive(active);
+    }
+
+    public void ActiveSkinsPanel(bool active)
+    {
+        pnl_Skins.SetActive(active);
     }
 }
